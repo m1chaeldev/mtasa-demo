@@ -13,7 +13,6 @@ end)
 
 addEventHandler('onPlayerQuit', root, function()
     if type(source) == 'userdata' then
-        print('hehe')
         local db = exports.db:getConnection()
         local x, y, z = getElementPosition(source)
         dbExec(db, 'UPDATE accounts SET x = ?, y = ?, z = ? WHERE username = ?', x, y, z, getPlayerName(source))

@@ -3,7 +3,7 @@ local browserGUI = guiCreateBrowser(sw / 2 - (450 / 2), sh / 2 - (450 / 2), 450,
 local browser = guiGetBrowser(browserGUI)
 
 addEventHandler("onClientBrowserCreated", browser, function()
-    loadBrowserURL(source, "http://mta/local/index.html")
+    loadBrowserURL(source, "http://mta/local/dist/index.html")
     setCameraMatrix(0, 0, 100, 0, 100, 50)
     fadeCamera(true)
     showCursor(true)

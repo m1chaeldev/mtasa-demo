@@ -1,14 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="./assets/index.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <script type="module" crossorigin src="./assets/index.js" async></script>
+  <link rel="stylesheet" crossorigin href="./assets/index.css">
+</head>
+
+<body onload="afterLoad();">
+  <div id="root"></div>
+</body>
+
 </html>
+
+<script>
+  const afterLoad = () => {
+    const submitBtn = document.getElementById('submit-btn')
+
+    submitBtn.onclick = () => {
+      const username = document.getElementById('username').value
+      const password = document.getElementById('password').value
+      const title = document.getElementById('form-title').innerText
+
+      mta.triggerEvent("loginPlayer", title, username, password)
+    }
+  }
+</script>
