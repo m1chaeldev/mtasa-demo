@@ -1,0 +1,10 @@
+<meta>
+    <script src="authentication.lua" type="server"/>
+    <script src="players.lua" type="server"/>
+    <script src="login_c.lua" type="client"/>
+
+    <file src="index.html"/>
+    <file src="dist/vite.svg"/>
+    <file src="dist/assets/index.js"/>
+    <file src="dist/assets/index.css"/>
+</meta>
