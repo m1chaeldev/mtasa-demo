@@ -4,7 +4,6 @@
     <script src="login_c.lua" type="client"/>
 
     <file src="dist/index.html"/>
-    <file src="dist/vite.svg"/>
     <file src="dist/assets/index.js"/>
     <file src="dist/assets/index.css"/>
 </meta>
